@@ -12,16 +12,20 @@ function informarNumerosCartas(){
 }
 informarNumerosCartas();
 
+
+
 function distribuirCartas(){
+    let array = [];
+    for(let i=0; i<numeroCartas; i++){
+    function criarImagem (){
     let container = document.querySelector('.carta_container');
     let cartinha = document.createElement('img');
-    cartinha.src ='front 1.png';
+    cartinha.src =('front 1.png');
     cartinha.classList.add('carta');
-    container.appendChild(cartinha);
-    
-    for(let i=0; i<=numeroCartas; i++){
-
-    }
+    array[i] = container.appendChild(cartinha);
+}criarImagem();
+ }
+ 
 
 }
 
