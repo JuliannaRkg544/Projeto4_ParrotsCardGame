@@ -24,7 +24,14 @@ body{
 .carta_container{
     display: flex;
     flex-wrap: wrap;
+   
+    
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     margin-left:100px;
     margin-right: 100px;
 }
@@ -40,8 +47,33 @@ body{
     align-items: center;
     margin-bottom: 34px;
     margin-right: 34px;
+    transition: all 2s;
+    transform-style: preserve-3d;
+
+    
+
+}
+.flip{
+    transform: rotateY(180deg);
+    
 }
 
+.frente{
+    position: absolute;
+    backface-visibility: hidden;
+   
+}
+
+.verso{
+    position: relative;
+     
+}
+
+
+img{
+    width: 100px;
+    height: 100px;
+}
 @media screen and (max-width:355px){
 
     .carta_container{
