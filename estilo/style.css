@@ -24,7 +24,6 @@ body{
 .carta_container{
     display: flex;
     flex-wrap: wrap;
-   
     
 }
 .container{
@@ -47,7 +46,7 @@ body{
     align-items: center;
     margin-bottom: 34px;
     margin-right: 34px;
-    transition: all 2s;
+    transition: all 0.8s;
     transform-style: preserve-3d;
 
     

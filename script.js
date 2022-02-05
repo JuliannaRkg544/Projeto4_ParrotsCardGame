@@ -22,13 +22,25 @@ function informarNumerosCartas(){
 }
 informarNumerosCartas();
 
-vetorCartas = ['js/img/borboleta-192x192.png', 'js/img/flor-192x192.png', 'js/img/leão-192x192.png',
+vetorCartas = [ 'js/img/borboleta-192x192.png', 'js/img/flor-192x192.png', 'js/img/leão-192x192.png',
 'js/img/lesma.png', 'js/img/penguim-.png','js/img/porco-192x192.png','js/img/unicornio-192x192.png',
 
 ]
 
+function concatena(){
+    for (let i=0; i<numeroCartas/2; i++){
+       
+        vetorCartas = vetorCartas.concat(vetorCartas);
+
+    }
+    vetorCartas.sort(comparador);
+}
+concatena();
+function exibirCartas(){
+
 let cartinha = document.querySelector('.container');
 for (let i=0; i<numeroCartas; i++){
+
     cartinha.innerHTML+= ` 
     <div class="carta_container" onclick="virar(this)">
     <div class="carta verso" >
@@ -37,5 +49,14 @@ for (let i=0; i<numeroCartas; i++){
     <div class="carta frente" >
     <img src="front 1.png" alt=""> 
     </div>
-    </div>`
+    </div>`  
 }
+
+}
+exibirCartas();
+
+function comparador() { 
+	return Math.random() - 0.5; 
+}
+
+
