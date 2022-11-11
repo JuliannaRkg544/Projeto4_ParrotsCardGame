@@ -6,4 +6,4 @@ align="center" width = 300px /> </div>
 
 
 ## Sobre 
-Um jogo da memória temático com aleatoridade, efeitos, transição e responsividade; desenvolvido em javascript vanilla, html e css. Nesse joogo foi possível desenvolver várias habilidades técnicas com javascript, bem como lógica de programação e também técnicas com css. 
+Um jogo da memória temático com aleatoridade, efeitos, transição e responsividade; desenvolvido em javascript vanilla, html e css. Nesse joogo foi possível desenvolver várias habilidades técnicas com javascript, bem como lógica de programação e também técnicas de animação com css. 
